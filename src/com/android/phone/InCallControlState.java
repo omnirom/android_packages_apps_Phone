@@ -59,6 +59,8 @@ public class InCallControlState {
     //
     public boolean canEndCall;
     //
+    public boolean canBlacklistCall;
+    //
     public boolean canSwap;
     public boolean canMerge;
     //

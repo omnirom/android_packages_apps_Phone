@@ -48,6 +48,7 @@ import com.android.internal.telephony.Call;
 import com.android.internal.telephony.CallManager;
 import com.android.internal.telephony.Phone;
 import com.android.internal.telephony.PhoneConstants;
+import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.GlowPadView.OnTriggerListener;
 import com.android.phone.InCallUiState.InCallScreenMode;
@@ -98,6 +99,8 @@ public class InCallTouchUi extends FrameLayout
     private CompoundButton mHoldButton;
     private ImageButton mSwapButton;
     private View mHoldSwapSpacer;
+    private ImageButton mAddBlacklistButton;
+    private View mBlacklistSpacer;
 
     // "Extra button row"
     private ViewStub mExtraButtonRow;
@@ -539,6 +542,14 @@ public class InCallTouchUi extends FrameLayout
 
         // "Audio"
         updateAudioButton(inCallControlState);
+
+        // "Add to black list"
+        if (mAddBlacklistButton != null) {
+            boolean visible = BlacklistUtils.isBlacklistEnabled(getContext()) &&
+                    inCallControlState.canBlacklistCall;
+            mAddBlacklistButton.setVisibility(visible ? View.VISIBLE : View.GONE);
+            mBlacklistSpacer.setVisibility(visible ? View.VISIBLE : View.GONE);
+        }
 
         // "Hold" / "Swap":
         // These two buttons occupy the same space onscreen, so at any

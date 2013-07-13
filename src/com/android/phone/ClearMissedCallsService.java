@@ -28,6 +28,9 @@ public class ClearMissedCallsService extends IntentService {
     /** This action is used to clear missed calls. */
     public static final String ACTION_CLEAR_MISSED_CALLS =
             "com.android.phone.intent.CLEAR_MISSED_CALLS";
+    /** This action is used to clear blacklisted calls. */
+    public static final String ACTION_CLEAR_BLACKLISTED_CALLS =
+            "com.android.phone.intent.CLEAR_BLACKLISTED_CALLS";
 
     private PhoneGlobals mApp;
 

@@ -34,6 +34,28 @@
             android:title="@string/vibrate_on_ring_title"
             android:persistent="false"
             android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_advanced_settings"
+        android:title="@string/advanced_setting">
+
+        <PreferenceScreen
+            android:key="button_blacklist"
+            android:title="@string/blacklist_title"
+            android:persistent="false">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.Settings$BlacklistSettingsActivity" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:key="button_rejected_as_missed"
+            android:title="@string/rejected_as_missed"
+            android:persistent="true"
+            android:summary="@string/rejected_as_missed_sum" />
+
     </PreferenceCategory>
 
   <PreferenceCategory
