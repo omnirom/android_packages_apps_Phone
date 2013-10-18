@@ -44,8 +44,4 @@
     <!-- Text for the onscreen "Blacklist" button -->
     <string name="onscreenBlacklistText">Blacklist</string>
 
-    <!-- Noise suppression -->
-    <string name="noise_suppression_title">Noise suppression</string>
-    <string name="noise_suppression_summary">Enable noise suppression for calls</string>
-
 </resources>

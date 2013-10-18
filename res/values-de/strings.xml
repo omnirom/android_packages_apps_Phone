@@ -483,7 +483,7 @@
     <string name="ota_speaker" msgid="6904589278542719647">"Lautspr."</string>
     <string name="ota_progress" msgid="3420314892609254729">"Bitte warten Sie, während Ihr Telefon programmiert wird."</string>
     <string name="ota_failure" msgid="4311299546379674378">"Programmierung fehlgeschlagen"</string>
-    <string name="ota_successful" msgid="1880780692887077407">"Ihr Telefon ist jetzt aktiviert. Es kann bis zu 15 Minuten dauern, bis der Dienst gestartet wird."</string>
+    <string name="ota_successful" msgid="1880780692887077407">"Ihr Telefon ist jetzt aktiviert. Es kann bis zu 15 Minuten dauern, bis der Dienst gestartet wird."</string>
     <string name="ota_unsuccessful" msgid="8072141612635635357">"Ihr Telefon wurde nicht aktiviert. "\n"Suchen Sie einen Bereich auf, in dem Sie besseren Empfang haben, zum Beispiel in der Nähe eines Fensters oder unter freiem Himmel. "\n\n"Versuchen Sie es bitte noch einmal oder rufen Sie den Kundenservice an."</string>
     <string name="ota_spc_failure" msgid="3909983542575030796">"ZU VIELE SPC-FEHLER"</string>
     <string name="ota_call_end" msgid="4537279738134612388">"Zurück"</string>
